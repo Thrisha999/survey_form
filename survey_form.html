@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        *{
+            font-family: cursive;
+        }
+        fieldset{
+            width:600px;
+            height: 1400px; 
+            padding-top: 50px;
+            padding-bottom: 50px;
+            position:relative;
+            left:500px;
+            border-radius: 10px;
+        }
+      
+        #info{
+            margin-left: 20px;
+        }
+        .pro1{
+            margin-bottom: 10px;
+        }
+        .box{
+            width: 200px;
+            height:40px ;
+            padding-left: 10px;
+            font-size: 15px;
+            margin-bottom: 30px;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+        #submit{
+            width:200px;
+            height: 50px;
+            position: relative;
+            top: 10px;
+            left: 150px;
+            font-size: 15px;
+            border-radius: 5px;
+            border: 2px solid grey;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <form action="*">
+            <h1 align="center">Survey Form</h1>
+        <div id="info">
+            <div >
+                <p>Full name</p>
+                <input type="text" placeholder="enter your name" class="box" required>
+            </div>
+
+            <div >
+                <p>Email</p>
+                <input type="email" placeholder="Enter your mail id" class="box" required>
+            </div>
+
+            <div >
+                <p>AGE</p>
+                <input type="number" placeholder="Enter your Age" class="box">
+            </div>
+
+            <div >
+                <p>Phone Number</p>
+                <input type="number" placeholder="Enter your Number" class="box">
+            </div>
+
+            <div>
+                <p>Gender</p>
+                <select name="Gender">
+                    <option value="Please Select">Please Select</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+
+            <div>
+                <p>Which Company products did you purchase?</p>
+                <div class="pro1"><label for="1"><input type="checkbox" name="product1" id="1">Loui vuitton</label></div>
+                <div class="pro1"><label for="2"><input type="checkbox" name="product1" id="2">Gucci</label></div>
+                <div class="pro1"><label for="3"><input type="checkbox" name="product1" id="3">Channel</label></div>
+                <div class="pro1"><label for="4"><input type="checkbox" name="product1" id="4">Dior</label></div>
+                <div class="pro1"><label for="5"><input type="checkbox" name="product1" id="5">Calvin Klein</label></div>
+                <div class="pro1"><label for="6"><input type="checkbox" name="product1" id="6">Balenciaga</label></div>
+            </div>
+
+            <div>
+                <p>Would you recommend that Company to others?</p>
+                <label for="rev1"><input type="radio" name="review1" id="rev1">Yes</label>
+                <label for="rev2"><input type="radio" name="review1" id="rev2">No</label>
+            </div>
+
+
+            <div>
+                <p>How would you rate your overall experience</p>
+                <label for="bad"><input type="radio" name="review2" id="bad">Bad</label>
+                <label for="average"><input type="radio" name="review2" id="average">Average</label>
+                <label for="good"><input type="radio" name="review2" id="good">Good</label>
+                <label for="excellent"><input type="radio" name="review2" id="excellent">Excellent</label>
+            </div>
+
+            <div>
+                <p>Comments</p>
+                <textarea name="comments" id="" cols="27" rows="9" placeholder="Comments...!!"></textarea>
+            </div>
+
+            <div>
+                <button id="submit" onclick="alert('Submitted successfully')">Submit</button>
+            </div>
+        </div>
+        </form>
+    </fieldset>
+</body>
+</html>
